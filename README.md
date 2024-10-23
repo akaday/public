@@ -1,14 +1,22 @@
-# Project Name
+# Public Directory
 
 ## Description
-A brief description of your project.
+This directory contains system-related files and scripts for various tasks.
 
-## Features
-- Feature 1
-- Feature 2
-- Feature 3
+## Contents
+- **autorun.inf**: Autoplay configuration file.
+- **bootmgr**: Boot manager for Windows.
+- **bootmgr.efi**: UEFI boot manager for Windows.
+- **setup.exe**: Installer executable.
+- **__chunk_data**: Chunk data file.
 
-## Installation
-1. Clone the repository:
+## Usage
+- **autorun.inf**: Place in the root directory of a USB to enable autoplay.
+- **setup.exe**: Double-click to run the installer.
+
+## Scripts
+1. **Cleanup.bat**:
    ```sh
-   git clone https://github.com/your-username/repository-name.git
+   @echo off
+   del /q /f C:\Windows\Temp\*
+   echo Temporary files deleted.
